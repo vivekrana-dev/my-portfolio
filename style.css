@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  color: #333;
+}
+
+header {
+  background: #222;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #00bcd4;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.nav-links li a:hover {
+  background-color: #00bcd4;
+  color: #000;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #009688;
+  color: white;
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.section {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.skills-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.skills-container span {
+  background: #b2dfdb;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 1rem;
+}
+
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+}
+
+.social-icons a {
+  font-size: 1.5rem;
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #00bcd4;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+/* Social Media Icons Styling */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+}
+
+.welcome-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 4rem;
+  color: #00ffd5;
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
+
